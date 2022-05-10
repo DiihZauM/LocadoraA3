@@ -12,18 +12,24 @@ namespace LocadoraA3.Controllers
     {
 
         conexaoDAO conexaoDao = new conexaoDAO();
-        public IActionResult Index()
+       
+        public ViewResult index()
+        {
+            return View();
+        }
+        
+        public IActionResult cadastroCliente()
         {
             var Cliente = new Cliente();
             return View(Cliente);
         }
         [HttpPost]
 
-        public ActionResult Index(CadastroCliente cliente)
+        public ActionResult cadastroCliente(conexaoDAO cliente)
         {
             if (ModelState.IsValid)
             {
-                return View("cliente", cliente);
+                return View("confirmacao", cliente);
             }
             return View(cliente);
         }

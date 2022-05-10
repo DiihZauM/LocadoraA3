@@ -34,5 +34,6 @@ C:\Users\Dih\source\repos\LocadoraA3\LocadoraA3\obj\Debug\netcoreapp2.1\Locadora
 C:\Users\Dih\source\repos\LocadoraA3\LocadoraA3\obj\Debug\netcoreapp2.1\LocadoraA3.dll
 C:\Users\Dih\source\repos\LocadoraA3\LocadoraA3\obj\Debug\netcoreapp2.1\LocadoraA3.pdb
 C:\Users\Dih\source\repos\LocadoraA3\LocadoraA3\obj\Debug\netcoreapp2.1\LocadoraA3.csproj.CopyComplete
-C:\Users\Dih\source\repos\LocadoraA3\LocadoraA3\obj\Debug\netcoreapp2.1\Razor\Views\CadastroCliente\Index.cshtml.g.cs
 C:\Users\Dih\source\repos\LocadoraA3\LocadoraA3\obj\Debug\netcoreapp2.1\Razor\Views\CadastroCliente\confirmacao.cshtml.g.cs
+C:\Users\Dih\source\repos\LocadoraA3\LocadoraA3\obj\Debug\netcoreapp2.1\Razor\Views\CadastroCliente\cadastroCliente.cshtml.g.cs
+C:\Users\Dih\source\repos\LocadoraA3\LocadoraA3\obj\Debug\netcoreapp2.1\Razor\Views\CadastroCliente\Cliente.cshtml.g.cs
