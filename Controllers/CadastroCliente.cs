@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using LocadoraA3.Conexao;
 using LocadoraA3.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LocadoraA3.Controllers
@@ -12,7 +13,7 @@ namespace LocadoraA3.Controllers
     {
 
         conexaoDAO conexaoDao = new conexaoDAO();
-       
+        Cliente Cli = new Cliente();
         public ViewResult index()
         {
             return View();
@@ -20,23 +21,31 @@ namespace LocadoraA3.Controllers
         
         public IActionResult cadastroCliente()
         {
-            var Cliente = new Cliente();
-            return View(Cliente);
+            
+            return View();
         }
         [HttpPost]
 
-        public ActionResult cadastroCliente(conexaoDAO cliente)
+        public ActionResult cadastroCliente(Cliente cliente)
         {
             if (ModelState.IsValid)
             {
-                return View("confirmacao", cliente);
+                
+                conexaoDao.CadCliente(cliente);
+
+                return View("confirmacao");
             }
-            return View(cliente);
+            return View();
         }
 
         public ActionResult Confirmacao (CadastroCliente cliente)
         {
             return View(cliente);
+        }
+
+        public ActionResult login (conexaoDAO login)
+        {
+
         }
 
     }

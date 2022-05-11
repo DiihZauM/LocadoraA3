@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -8,10 +9,10 @@ namespace LocadoraA3.Conexao
 {
     public class ConexaoDB
     {
-        SqlConnection cn = new SqlConnection(@"Server=localhost;Database=LocadoraDb;Uid=root;Pwd=Dizao@123;");
+        MySqlConnection cn = new MySqlConnection(@"Server=localhost;Database=LivrariaDb;Uid=root;Pwd=Dizao@123;");
         public static string msg;
 
-        public SqlConnection MyConectarBD()
+        public MySqlConnection MyConectarBD()
         {
 
             try
@@ -26,7 +27,7 @@ namespace LocadoraA3.Conexao
             return cn;
         }
 
-        public SqlConnection MyDesConectarBD()
+        public MySqlConnection MyDesConectarBD()
         {
 
             try
