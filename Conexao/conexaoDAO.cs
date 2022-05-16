@@ -13,6 +13,7 @@ namespace LocadoraA3.Conexao
 {
     public class conexaoDAO
     {
+        
         ConexaoDB con = new ConexaoDB();
 
         public void CadCliente(Cliente cliente)
@@ -33,9 +34,14 @@ namespace LocadoraA3.Conexao
 
         }
 
-        public void login(Cliente cliente)
+      
+
+        public void Login(LoginModel loginModel)
         {
+            
             MySqlCommand lg = new MySqlCommand("select email, senha from Cliente ");
+            lg.Parameters.Add("email", MySqlDbType.VarChar).Value = loginModel.Email;
+            lg.Parameters.Add("senha", MySqlDbType.VarChar).Value = loginModel.Senha;
             
         }
 

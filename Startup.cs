@@ -56,7 +56,7 @@ namespace LocadoraA3
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=CadastroCliente}/{action=cadastroCliente}/{id?}");
+                    template: "{controller=Login}/{action=Index}/{id?}");
             });
         }
     }
