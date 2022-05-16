@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\aaa.cs" />
+    <Compile Remove="Views\Shared\_LayoutDeslogada.cs" />
   </ItemGroup>
 
   <ItemGroup>

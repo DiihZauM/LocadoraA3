@@ -43,10 +43,7 @@ namespace LocadoraA3.Controllers
             return View(cliente);
         }
 
-        public ActionResult login (conexaoDAO login)
-        {
-
-        }
+        
 
     }
 }

@@ -35,7 +35,7 @@ namespace LocadoraA3.Conexao
 
         public void login(Cliente cliente)
         {
-            MySqlCommand lg = new MySqlCommand ("select email, senha from Cliente ")
+            MySqlCommand lg = new MySqlCommand("select email, senha from Cliente ");
             
         }
 
